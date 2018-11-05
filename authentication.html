@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>大学。问</title>
+	<!-- Meta-tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Grounding Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Metga-tags -->
+
+	<!-- Styleshets -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!--// Bootstrap-css -->
+	<link href="css/banner.css" rel="stylesheet" type="text/css" media="all" />
+	<!--// banner-css -->
+	
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- common-css -->
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	
+</head>
+
+<body>
+	<!-- header -->
+	<div class="header" id="home">
+		<!-- 导航栏 -->
+		<!--// header-middle -->
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-header">
+				<div class="bar-logo"><img src="images/logo.jpg" alt="logo" style="width:90%"></div>
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse js-navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="material.html">官方资料</a></li>
+					<li><a href="carryYou.html">学霸带飞</a></li>
+					<li><a href="Schedule.html">时间规划表</a></li>
+					<li><a href="authentication.html">学霸认证</a></li>
+					<li><a href="#" class="log" data-toggle="modal" data-target="#myModal">登录</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<!-- authBonner -->
+	<div class="back">
+	<section class="aui-content">
+		<div style="height:15em;"></div>
+		<div class="aui-content-up">
+			<form action="" name="form1" method="post">
+				<div class="aui-content-up-form">
+					<h2>身份认证</h2>
+				</div>
+				<div class="aui-form-group clear">
+					<label class="aui-label-control">
+						姓名 <em>*</em>
+					</label>
+					<div class="aui-form-input">
+						<input type="text" class="aui-form-control-two" name="yourname" onBlur="checkna()" required id="1" placeholder="请输入身份证名字">
+						<span class="tips" id="divname">长度1~6个字符</span>
+					</div>
+				</div>
+				<div class="aui-form-group clear">
+					<label class="aui-label-control">
+						手机号码 <em>*</em>
+					</label>
+					<div class="aui-form-input">
+						<input type="text" class="aui-form-control-two" name="youphone" id="2" placeholder="请输入11位的手机号码" onBlur="checkpsd1()" required/>
+						<span class="tips" id="phone">必须是11位的数字</span>
+					</div>
+				</div>
+				<div class="aui-form-group clear">
+					<label class="aui-label-control">
+						大学 <em>*</em>
+					</label>
+					<div class="aui-form-input">
+						<input type="text" class="aui-form-control-two" name="youziz" id="3" placeholder="所在大学全称" onBlur="checkpsd2()" required/>
+						<span class="tips" id="zizhi">必须完整</span>
+					</div>
+				</div>
+				<div class="aui-form-group clear">
+					<label class="aui-label-control">
+						个人简介
+					</label>
+					<div class="aui-form-input">
+						<textarea class="aui-form-control" name="description" id="4" minlength="5">包括：特长、兴趣、学习能力等</textarea>
+					</div>
+				</div>
+				<div class="aui-form-group clear">
+					<label class="aui-label-control">
+						学生证、成绩单 <em>*</em>
+						<span>小于5M</span>
+					</label>
+					<div class="aui-form-input">
+						<div class="aui-content-img-box aui-content-full">
+							<div class="aui-photo aui-up-img clear">
+								<section class="aui-file-up fl">
+									<img src="images/up.png" class="add-img">
+									<input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple/>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="aui-form-group-text">
+					<!-- <h3>需要以下材料</h3>
+					<p>营业执照或组织机构代码等生产方《化妆品生产许可证》代生产合同或经销证明国产非特殊用途化妆品食药监查询截图进口化妆品，需提供国务院食药监行政部门备案登记即《进口（非）特殊用途化妆品备案凭证》</p> -->
+				</div>
+			</form>
+		</div>
+		<div class="aui-btn-default">
+			<button class="aui-btn aui-btn-account">保存并提交审核</button>
+		</div>
+	</section>
+	</div>
+	<!-- mask begin -->
+	<div class="aui-mask aui-works-mask">
+		<div class="aui-mask-content">
+			<p class="aui-delete-text">确定要删除你上传的资料？</p>
+			<p class="aui-check-text">
+				<span class="aui-delete aui-accept-ok">确定</span>
+				<span class="aui-accept-no">取消</span>
+			</p>
+		</div>
+	</div>
+	<!-- mask end -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/up.js"></script>
+	<script type="text/javascript">
+	
+
+	//验证姓名
+	function checkna(){
+
+		na=form1.yourname.value;
+
+		if( na.length <1 || na.length >6)
+
+		{
+
+			divname.innerHTML='<font class="tips_false">长度是1~6个字符</font>';
+
+
+
+		}else{
+
+			divname.innerHTML='<font class="tips_true">输入正确</font>';
+
+
+
+		}
+
+
+
+	}
+
+	//验证手机号码
+	function checkpsd1(){
+
+		na=form1.youphone.value;
+
+		if( na.length <11 || na.length >11)
+
+		{
+
+			phone.innerHTML='<font class="tips_false">必须是11位的数字</font>';
+
+
+
+		}else{
+
+			phone.innerHTML='<font class="tips_true">输入正确</font>';
+
+
+
+		}
+
+
+
+	}
+
+	//验证社会统一代码
+	function checkpsd2(){
+
+		na=form1.youziz.value;
+
+		if( na.length <18 || na.length >18)
+
+		{
+
+			zizhi.innerHTML='<font class="tips_false">必须是18位社会信用代码</font>';
+
+
+
+		}else{
+
+			zizhi.innerHTML='<font class="tips_true">输入正确</font>';
+
+
+
+		}
+
+
+
+	}
+
+</script>
+	<div style="width:100%;height:8em"></div>
+	</div>
+
+
+
+	<!-- footer -->
+	<div class="footer_agileinfo_topf">
+		<div class="container">
+			<div class="clearfix"> </div>
+			<div class="w3ls-fsocial-grid">
+				<h3 class="sub-w3ls-headf">联系我们</h3>
+				<div class="social-ficons">
+					<ul>
+						<li><a href="#"><img src="images/qq.jpg" style="width:20px;margin:2px">QQ</a></li>
+						<li><a href="#"><img src="images/dh.jpg" style="width:20px;margin:2px"">Phone</a></li>
+						<li><a href="#"><img src="images/yx.jpg" style="width:20px;margin:2px"">E-mail</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-wthree-copyf">
+		<div class="container">
+			<p>© 2017-2018. 360产品大赛小组版权所有 | Design by <a href="http://www.cqz21.top">360小组</a></p>
+		</div>
+	</div>
+	<!-- //footer -->
+
+	<!-- js -->
+
+	<!-- Common js -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<!--// Common js -->
+
+
+	<!-- Nav Js -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".dropdown").hover(
+				function () {
+					$('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideDown("400");
+					$(this).toggleClass('open');
+				},
+				function () {
+					$('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).slideUp("400");
+					$(this).toggleClass('open');
+				}
+			);
+		});
+	</script>
+	<!--// Nav Js -->
+
+	<!-- bootstrap-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					Sign In & Sign Up
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="loginf_module">
+							<div class="module form-module">
+								<div class="toggle"><i class="fa fa-times fa-pencil"></i>
+									<div class="tooltip">Click Me</div>
+								</div>
+								<div class="form">
+									<h3>Login to your account</h3>
+									<form action="#" method="post">
+										<input type="text" name="Username" placeholder="Username" required="">
+										<input type="password" name="Password" placeholder="Password" required="">
+										<input type="submit" value="Login">
+									</form>
+									<div class="cta"><a href="#">Forgot your password?</a></div>
+								</div>
+								<div class="form">
+									<h3>Create an account</h3>
+									<form action="#" method="post">
+										<input type="text" name="Username" placeholder="Username" required="">
+										<input type="password" name="Password" placeholder="Password" required="">
+										<input type="email" name="Email" placeholder="Email address" required="">
+										<input type="text" name="Phone" placeholder="Phone Number" required="">
+										<input type="submit" value="Register">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	
+	
+
+
+
+</body>
+
+</html>
